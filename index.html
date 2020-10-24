@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let val;
+        let dollar = prompt("Введите доллары", val).replace(',', '.');
+        const rouble = Number(dollar / 76.22).toFixed(2).replace('.', ',');
+        dollar = dollar.replace('.', ',');
+        alert(`${dollar} доллар США равно ${rouble} Российский рубль`);
+    </script>
+</body>
+</html>
