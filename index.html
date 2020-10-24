@@ -9,9 +9,13 @@
     <script>
         let val;
         let dollar = prompt("Введите доллары", val).replace(',', '.');
-        const rouble = Number(dollar / 76.22).toFixed(2).replace('.', ',');
+        if (dollar) {
+            const rouble = Number(dollar / 76.22).toFixed(2).replace('.', ',');
         dollar = dollar.replace('.', ',');
         alert(`${dollar} доллар США равно ${rouble} Российский рубль`);
+        } else {
+            alert('Нет данных!');
+        }
     </script>
 </body>
 </html>
